@@ -69,14 +69,27 @@ async function obtenerDatosSistema() {
             si.networkInterfaces()
         ]);
 
+// ==========================================
+// PARTICIÓN PRINCIPAL
+// ==========================================
 
-        // ==========================================
-        // PARTICIÓN PRINCIPAL
-        // ==========================================
+let particionRaiz = null;
 
-        const particionRaiz =
-            discos.find(disco => disco.mount === '/') || null;
+if (process.platform === 'win32') {
 
+    const unidadSistema = process.env.SystemDrive;
+
+    particionRaiz = discos.find(disco =>
+        disco.mount?.toUpperCase() ===
+        unidadSistema?.toUpperCase()
+    ) || null;
+
+} else {
+
+    particionRaiz =
+        discos.find(disco => disco.mount === '/') || null;
+
+}
 
         // ==========================================
         // MEMORIA SWAP
