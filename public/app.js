@@ -6,8 +6,6 @@ const socket = io();
 
 const estadoConexion =
     document.getElementById('estadoConexion');
-
-
 // ==========================================
 // ESTADO DE CONEXIÓN
 // ==========================================
