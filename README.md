@@ -82,9 +82,13 @@ pnpm
 
 ### 7. Usar los siguientes comandos: systemctl daemon-reload, systemctl enable --now monitor-sistema, systemctl status monitor-sistema para que inicie automanticamente cada vez que el servidor este activo
 
+### 8. Instalar el apk de la carpeta "AplicacionMovil" en un dispositivo móvil para poder monitorear desde ahí los datos servidor
+
 # Funcionamiento
 Una vez instalada la aplicacion, solo se tiene que ingresar a travez de un navegador a https //localhost:3000/ o desde otra pc en la misma red https //Ip-del-servidor:3000/ ej:https //192.168.0.185:3000/
 Para el caso de la app movil se configuro para la ip del servidor debian https //192.168.0.185:3000/
+En la Carpeta AplicacionMovil se encuentra el apk para instalarlo en dispositivos móviles 
+En la carpeta publicParaAppmovil se encuentra el frontend que se utilizo para ser empaquetado usando HTML2APK, se configuro el mismo para que levante solo la ip del servidor linux (192.168.0.185), en cambio el de public levanta //localhost:3000/
 
 # Capturas de pantalla
 
@@ -110,3 +114,6 @@ Para el caso de la app movil se configuro para la ip del servidor debian https /
 
 Captura del merge
 ![CapturaMerge](Merge.PNG)
+
+# Autor
+Luis Eduardo Valls
