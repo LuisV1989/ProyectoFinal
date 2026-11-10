@@ -1,0 +1,57 @@
+/* ==========================================
+   ESTILOS GENERALES
+========================================== */
+
+body {
+    background-color: #f1f4f8;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ==========================================
+   TARJETAS
+========================================== */
+
+.card {
+    border: none;
+    border-radius: 12px;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   DATOS DEL SISTEMA
+========================================== */
+
+.dato-principal {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.dato-secundario {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+
+/* ==========================================
+   BARRAS DE PROGRESO
+========================================== */
+
+.barra-progreso {
+    height: 12px;
+}
+
+
+/* ==========================================
+   INFORMACIÓN COMPLETA DE LA API
+========================================== */
+
+pre {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-size: 12px;
+}
